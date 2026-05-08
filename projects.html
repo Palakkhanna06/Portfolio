@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Projects – Palak Palak</title>
@@ -16,7 +16,6 @@
             <a href="about.html">About</a>
             <a href="projects.html" class="active">Projects</a>
             <a href="contact.html">Contact</a>
-            <button class="theme-toggle">☀ Light</button>
         </nav>
     </header>
 
@@ -24,57 +23,34 @@
         <div class="section-header">
             <h1 class="section-title">Projects Overview</h1>
             <p class="section-subtitle">
-                A selection of projects I’ve worked on, including domains, tools, and outcomes.
+                Builds spanning data analytics, real-time multiplayer, backend APIs, full-stack MVC—and disciplined delivery with GitHub and Jira.
             </p>
         </div>
 
         <div class="grid">
-            <!-- Invoice Generator -->
+            <!-- HR attrition analytics -->
             <article class="card project-card">
-                <div class="card-title">Invoice Generator</div>
+                <div class="card-title">HR Attrition Data Analytics</div>
                 <div class="card-meta">
-                    <span class="pill pill-domain">Domain: Business / Retail</span>
+                    <span class="pill pill-domain">Domain: Analytics / Workforce</span>
                 </div>
                 <p class="card-body">
-                    A web application that generates invoices and calculates discounts based on customer
-                    type and invoice amount. Invoices are stored in JSON files and rendered using
-                    server-side templates.
+                    End-to-end analysis of HR attrition data to surface actionable insights. I modeled the
+                    data with pivot-style breakdowns (dimensions and aggregates), iterated on hypotheses,
+                    and packaged results in an interactive dashboard that refreshed as inputs changed.
                 </p>
                 <ul class="list">
-                    <li><strong>Tools Used:</strong> Node.js, Express, hbs, environment-based configuration</li>
-                    <li><strong>Key Features:</strong> dynamic totals, validation, simple reporting</li>
-                    <li><strong>Project Outcome:</strong> Strengthened understanding of backend logic,
-                        request handling, and server-side rendering.</li>
+                    <li><strong>Tools Used:</strong> Python, pivot-oriented analysis workflows, dashboard tooling</li>
+                    <li><strong>Key Features:</strong> insight discovery, exploratory metrics, live working dashboard,
+                        repeatable data views</li>
+                    <li><strong>Project Outcome:</strong> Demonstrated translating raw HR data into clear charts and
+                        decisions stakeholders can rely on—not just notebooks, but something useable.</li>
                 </ul>
                 <div class="pill-row">
-                    <span class="pill">Node.js</span>
-                    <span class="pill">Express</span>
-                    <span class="pill">hbs</span>
-                    <span class="pill">JSON</span>
-                </div>
-            </article>
-
-            <!-- Library System -->
-            <article class="card project-card">
-                <div class="card-title">Library Management System</div>
-                <div class="card-meta">
-                    <span class="pill pill-domain">Domain: Education / Library</span>
-                </div>
-                <p class="card-body">
-                    A full-stack library management application that supports managing books, authors,
-                    and users with CRUD operations and well-structured RESTful endpoints.
-                </p>
-                <ul class="list">
-                    <li><strong>Tools Used:</strong> Java, Spring Boot, Spring Data JPA, MySQL</li>
-                    <li><strong>Key Features:</strong> book & author management, relational data,
-                        controller/service/repository layers</li>
-                    <li><strong>Project Outcome:</strong> Improved understanding of layered architecture,
-                        entities, and database integration.</li>
-                </ul>
-                <div class="pill-row">
-                    <span class="pill">Java</span>
-                    <span class="pill">Spring Boot</span>
-                    <span class="pill">MySQL</span>
+                    <span class="pill">Python</span>
+                    <span class="pill">Data analysis</span>
+                    <span class="pill">Dashboards</span>
+                    <span class="pill">Pivot logic</span>
                 </div>
             </article>
 
@@ -101,70 +77,84 @@
                 </div>
             </article>
 
-            <!-- Bug Report / Defect Tracker Exercise -->
+            <!-- Card Pairs multiplayer -->
             <article class="card project-card">
-                <div class="card-title">Bug Report / Defect Tracker Exercise</div>
+                <div class="card-title">Card Pairs Multiplayer Game</div>
                 <div class="card-meta">
-                    <span class="pill pill-domain">Domain: Quality Assurance</span>
+                    <span class="pill pill-domain">Domain: Real-Time Web / Gaming</span>
                 </div>
                 <p class="card-body">
-                    A structured exercise where I practiced filling out defect reports, using consistent
-                    fields and workflows commonly seen in tools like JIRA.
+                    A multiplayer card matching experience where exactly two players can join across the network.
+                    The server pushes game state live over WebSockets, and a sidebar chat stays in sync while both
+                    clients play from their own browsers.
                 </p>
                 <ul class="list">
-                    <li><strong>Tools Used:</strong> JIRA-style templates, test cases, screenshots</li>
-                    <li><strong>Key Features:</strong> clear defect descriptions, steps to reproduce, priorities</li>
-                    <li><strong>Project Outcome:</strong> Better understanding of defect life cycle and communication
-                        between QA and development.</li>
+                    <li><strong>Tools Used:</strong> WebSockets for real-time state, networked session handling,
+                        concurrent client UI</li>
+                    <li><strong>Key Features:</strong> two-player match flow, fairness of turns, reconnect-friendly
+                        messaging basics, contextual side chat during play</li>
+                    <li><strong>Project Outcome:</strong> Practiced reasoning about latency, broadcasts, room-like
+                        sessions, and multiplayer UX—all without fighting the abstraction of plain HTTP polling.</li>
                 </ul>
                 <div class="pill-row">
-                    <span class="pill">Testing</span>
-                    <span class="pill">Defect Logging</span>
+                    <span class="pill">WebSockets</span>
+                    <span class="pill">Real-time</span>
+                    <span class="pill">Multiplayer</span>
                 </div>
             </article>
 
-            <!-- Secure Product API -->
+            <!-- Flavor Garden -->
             <article class="card project-card">
-                <div class="card-title">Secure Product API</div>
+                <div class="card-title">Flavor Garden</div>
                 <div class="card-meta">
-                    <span class="pill pill-domain">Domain: E-Commerce / APIs</span>
+                    <span class="pill pill-domain">Domain: Hospitality / Restaurant Ops</span>
                 </div>
                 <p class="card-body">
-                    A Spring-based application that exposes product endpoints and secures them with
-                    authentication and authorization concepts.
+                    Restaurant operations platform modeled in Java Spring Boot against a disciplined MySQL schema
+                    (designed with MySQL Workbench). Guests and operators work through cohesive screens for floor
+                    plans: seating layouts, hosted events, curated menus plus menu items, reservations and booking
+                    windows, transactional email notifications—all behind clean REST endpoints.
                 </p>
                 <ul class="list">
-                    <li><strong>Tools Used:</strong> Java, Spring Boot, Spring Security</li>
-                    <li><strong>Key Features:</strong> secured endpoints, role-based access, error handling</li>
-                    <li><strong>Project Outcome:</strong> Practical experience with basic security configuration
-                        and protected API routes.</li>
+                    <li><strong>Tools Used:</strong> Java, Spring Boot, MySQL Workbench / relational modeling,
+                        REST controllers, transactional mail integration</li>
+                    <li><strong>Key Features:</strong> table & seating management, event scheduling, layered menu
+                        catalogues, bookings with availability checks, outbound mailers for confirmations/reminders</li>
+                    <li><strong>Project Outcome:</strong> Produced a believable SaaS-lite domain model with guarded
+                        boundaries between domain services, cohesive UI polishing, and API contracts other clients
+                        could consume.</li>
                 </ul>
                 <div class="pill-row">
-                    <span class="pill">Spring Security</span>
-                    <span class="pill">REST API</span>
+                    <span class="pill">Spring Boot</span>
+                    <span class="pill">REST APIs</span>
+                    <span class="pill">MySQL</span>
+                    <span class="pill">Workbench</span>
+                    <span class="pill">Email</span>
                 </div>
             </article>
 
-            <!-- REST & JS Mini Projects -->
+            <!-- GitHub + Jira -->
             <article class="card project-card">
-                <div class="card-title">REST API & JavaScript Mini Projects</div>
+                <div class="card-title">Delivery Discipline · GitHub &amp; Jira</div>
                 <div class="card-meta">
-                    <span class="pill pill-domain">Domain: Practice / Learning</span>
+                    <span class="pill pill-domain">Domain: Collaboration / Delivery</span>
                 </div>
                 <p class="card-body">
-                    Smaller exercises focused on building REST endpoints and improving JavaScript skills
-                    such as DOM manipulation and basic UI components.
+                    Across these builds I leaned on disciplined engineering habits: branching strategies, pull
+                    requests, code reviews, and traceability from backlog to deployed feature.
                 </p>
                 <ul class="list">
-                    <li><strong>Tools Used:</strong> ASP.NET MVC, C#, JavaScript, fetch API</li>
-                    <li><strong>Key Features:</strong> client-side interactions, dynamic content, simple APIs</li>
-                    <li><strong>Project Outcome:</strong> Improved comfort with front-end scripting and integrating
-                        front and back ends.</li>
+                    <li><strong>GitHub:</strong> feature branches, PR hygiene, iterative commits tying to milestones</li>
+                    <li><strong>Jira boards:</strong> sprint planning cues, prioritized issues, QA hand-off notes,
+                        definition-of-done checkpoints</li>
+                    <li><strong>Project Outcome:</strong> Comfortable shipping in student and team simulations with the
+                        same artifacts modern product teams expect—clear history plus accountable task tracking.</li>
                 </ul>
                 <div class="pill-row">
-                    <span class="pill">REST</span>
-                    <span class="pill">ASP.NET</span>
-                    <span class="pill">JavaScript</span>
+                    <span class="pill">GitHub</span>
+                    <span class="pill">Git</span>
+                    <span class="pill">Jira</span>
+                    <span class="pill">Agile</span>
                 </div>
             </article>
         </div>
@@ -181,27 +171,27 @@
 
         <div class="grid grid-samples">
             <div class="card">
-                <div class="card-title">Analysis & Design</div>
+                <div class="card-title">Analysis & Visualization</div>
                 <ul class="list">
-                    <li>Use case diagrams and narratives for the Library System</li>
-                    <li>Basic user stories for the Recipe / Flavor Site</li>
-                    <li>Sketches or wireframes of the recipe and invoice screens</li>
+                    <li>Pivot-ready HR attrition views and exploratory charts feeding the dashboard</li>
+                    <li>Restaurant domain modeling sketches for seating, events, and reservations</li>
+                    <li>Wire-level thinking for realtime Card Pairs state + chat ergonomics</li>
                 </ul>
             </div>
             <div class="card">
-                <div class="card-title">Requirements & Documentation</div>
+                <div class="card-title">Requirements & Collaboration</div>
                 <ul class="list">
-                    <li>Functional requirement summaries for selected projects</li>
-                    <li>Sample test cases used in QA assignments</li>
-                    <li>Defect logs linked to specific test cases</li>
+                    <li>Jira-issue breakdowns aligning bookings, menus, notifications in Flavor Garden</li>
+                    <li>Backlog grooming examples linking analytics questions to dashboards</li>
+                    <li>Multiplayer QA checklists verifying two-client WebSocket behaviour</li>
                 </ul>
             </div>
             <div class="card">
-                <div class="card-title">Code & Automation</div>
+                <div class="card-title">Code & Ops</div>
                 <ul class="list">
-                    <li>Code snippets illustrating controller/service patterns</li>
-                    <li>Example Selenium scripts interacting with web pages</li>
-                    <li>Git commit history showing feature development steps</li>
+                    <li>GitHub branching narratives across Spring MVC, dashboards, websocket services</li>
+                    <li>REST contract snippets from Flavor Garden + integration tests mindset</li>
+                    <li>Automation touchpoints—data refresh jobs, transactional mail hooks, dashboards</li>
                 </ul>
             </div>
         </div>
@@ -209,11 +199,10 @@
 
     <footer>
         <div>© <span id="year"></span> Palak Palak</div>
-        <div>More projects coming as I keep building 🚀</div>
+        <div>Building data, realtime, and full-stack experiences.</div>
     </footer>
 </div>
 
-<script src="theme.js"></script>
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>

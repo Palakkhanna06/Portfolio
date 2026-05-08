@@ -1,0 +1,4 @@
+{
+  // Ritwick Live Server: use 8080 instead of default 5500 for this workspace
+  "liveServer.settings.port": 8080
+}

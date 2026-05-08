@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-        <title>About – Palak Palak</title>
+    <title>About – Palak Palak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,7 +16,6 @@
             <a href="about.html" class="active">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
-            <button class="theme-toggle">☀ Light</button>
         </nav>
     </header>
 
@@ -37,10 +36,11 @@
             </p>
 
             <p class="section-text">
-                Recently, I’ve worked on projects such as an invoice generator in Node.js, a
-                library system in Spring Boot, and a recipe/approval application using ASP.NET MVC.
-                These projects helped me practice <strong>routing, data modeling, authentication,
-                validation, and user-friendly UIs</strong>.
+                Recent work includes Python-driven <strong>HR attrition analytics</strong> with pivot insights and a live dashboard,
+                a <strong>WebSocket multiplayer</strong> Card Pairs experience with synced chat,
+                <strong>Flavor Garden</strong>—a Spring Boot platform for seating, events, reservations, menus, mailers—and
+                a recipe/approval ASP.NET MVC app. Together they reinforce <strong>API design, realtime UX,
+                data storytelling, and polished full-stack delivery</strong>.
             </p>
 
             <p class="section-text">
@@ -52,46 +52,73 @@
     </section>
 
     <!-- SUMMARY OF SKILLS -->
-    <section class="section section-narrow">
-        <div class="section-header">
+    <section class="section section-narrow section-skills">
+        <div class="section-header section-header-skills">
             <h2 class="section-title">Summary of Skills</h2>
             <p class="section-subtitle">
                 Background, software development skills, and areas where I can contribute.
             </p>
         </div>
 
-        <div class="skills-grid skills-grid-two">
-            <div class="card">
-                <div class="card-title">Background & Domain Knowledge</div>
-                <ul class="list">
-                    <li>Academic focus on <strong>web application development</strong> and <strong>APIs</strong></li>
-                    <li>Experience with projects in <strong>business</strong> (invoicing, library, products) and
-                        <strong>lifestyle</strong> (recipe app)</li>
-                    <li>Exposure to <strong>quality assurance</strong> concepts, defect logging, and Selenium tests</li>
-                </ul>
-            </div>
-            <div class="card">
-                <div class="card-title">Software Development Skills</div>
-                <ul class="list">
-                    <li>Languages: JavaScript, C#, Java, SQL</li>
-                    <li>Backend: Node.js & Express, ASP.NET MVC, Spring Boot</li>
-                    <li>Frontend: HTML, CSS, Razor views, Handlebars (hbs)</li>
-                    <li>Databases: MySQL, SQL Server, basic ER and relationship modeling</li>
-                    <li>Tools: Git & GitHub, basic Selenium automation, JIRA-style defect tracking</li>
-                </ul>
-            </div>
-        </div>
+        <div class="skills-layout">
+            <div class="skills-row-two">
+                <article class="card skill-card skill-card--domain">
+                    <div class="skill-card-top">
+                        <span class="skill-card-icon" aria-hidden="true">◎</span>
+                        <h3 class="skill-card-heading">Background &amp; domain</h3>
+                    </div>
+                    <ul class="list skill-list">
+                        <li>Academic focus on <strong>web application development</strong> and <strong>APIs</strong></li>
+                        <li>Projects across <strong>analytics</strong> (HR attrition dashboards), <strong>hospitality systems</strong>
+                            (Flavor Garden), <strong>realtime games</strong> (WebSockets), and <strong>lifestyle web</strong> (recipe app)</li>
+                        <li>Comfortable with <strong>issue tracking</strong> (Jira boards), <strong>GitHub</strong> workflows, and structured QA habits</li>
+                    </ul>
+                </article>
 
-        <div class="card">
-            <div class="card-title">Areas of Specialization & Contribution</div>
-            <ul class="list">
-                <li>Designing and implementing <strong>RESTful APIs</strong> with clear routing and validation</li>
-                <li>Securing applications with basic <strong>authentication and role-based access</strong></li>
-                <li>Working with relational databases and writing <strong>SQL queries</strong></li>
-                <li>Building UI forms and layouts that are clean and easy to follow</li>
-                <li>Using <strong>Git</strong> to manage branches, commits, and pull requests</li>
-                <li>Applying a <strong>testing mindset</strong> (thinking about edge cases and user flows)</li>
-            </ul>
+                <article class="card skill-card skill-card--stack">
+                    <div class="skill-card-top">
+                        <span class="skill-card-icon skill-card-icon--code" aria-hidden="true">&lt;/&gt;</span>
+                        <h3 class="skill-card-heading">Software skills</h3>
+                    </div>
+                    <dl class="skill-meta-grid">
+                        <div class="skill-meta-row">
+                            <dt>Languages</dt>
+                            <dd>JavaScript, C#, Java, Python, SQL</dd>
+                        </div>
+                        <div class="skill-meta-row">
+                            <dt>Backend</dt>
+                            <dd>Spring Boot (REST), WebSockets, ASP.NET MVC, Node.js &amp; Express</dd>
+                        </div>
+                        <div class="skill-meta-row">
+                            <dt>Data &amp; UI</dt>
+                            <dd>Pivot analytics, dashboard delivery, HTML, CSS, Razor, Handlebars</dd>
+                        </div>
+                        <div class="skill-meta-row">
+                            <dt>Databases</dt>
+                            <dd>MySQL (Workbench), SQL Server, ER modeling</dd>
+                        </div>
+                        <div class="skill-meta-row">
+                            <dt>Tools</dt>
+                            <dd>Git, GitHub, Jira boards, Selenium exposure</dd>
+                        </div>
+                    </dl>
+                </article>
+            </div>
+
+            <article class="card skill-card skill-card--focus">
+                <div class="skill-card-top">
+                    <span class="skill-card-icon skill-card-icon--check" aria-hidden="true">✓</span>
+                    <h3 class="skill-card-heading">Specialization &amp; contribution</h3>
+                </div>
+                <ul class="list skill-list skill-list--checks">
+                    <li>Designing and implementing <strong>RESTful APIs</strong> with clear routing and validation</li>
+                    <li>Securing applications with basic <strong>authentication and role-based access</strong></li>
+                    <li>Working with relational databases and writing <strong>SQL queries</strong></li>
+                    <li>Building UI forms and layouts that are clean and easy to follow</li>
+                    <li>Using <strong>Git</strong> to manage branches, commits, and pull requests</li>
+                    <li>Applying a <strong>testing mindset</strong> (thinking about edge cases and user flows)</li>
+                </ul>
+            </article>
         </div>
     </section>
 
@@ -107,12 +134,12 @@
         <div class="card">
             <ul class="list">
                 <li>
-                    Completed multiple <strong>full-stack course projects</strong> (invoice generator,
-                    library system, recipe app, secure product API) with working features and
-                    documented behaviour.
+                    Delivered <strong>end-to-end projects</strong> spanning analytics dashboards, realtime multiplayer WebSockets,
+                    Spring Boot hospitality systems, MVC recipe tooling, paired with disciplined <strong>GitHub</strong> and
+                    <strong>Jira</strong> workflows.
                 </li>
                 <li>
-                    Practiced <strong>defect reporting</strong> and test design through QA assignments
+                    Practiced <strong>test design</strong> and structured QA assignments
                     involving structured test cases and JIRA-style tickets.
                 </li>
                 <li>
@@ -150,47 +177,12 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS / RECOMMENDATIONS (placeholder style) -->
-    <section class="section section-narrow">
-        <div class="section-header">
-            <h2 class="section-title">Testimonials & Recommendations</h2>
-            <p class="section-subtitle">
-                Space reserved for future quotes from instructors, supervisors, or teammates.
-            </p>
-        </div>
-
-        <div class="grid grid-testimonials">
-    <div class="card testimonial-placeholder">
-        <p class="card-body">
-            “Palak consistently demonstrates strong problem-solving skills and a solid understanding
-            of software development principles. His ability to translate requirements into working
-            solutions and continuously improve based on feedback reflects a professional mindset.”
-        </p>
-        <div class="testimonial-name">
-            – Instructor, Software Development Program (NBCC)
-        </div>
-    </div>
-
-    <div class="card testimonial-placeholder">
-        <p class="card-body">
-            “Palak was an effective contributor during group-based assignments. He communicated clearly,
-            respected deadlines, and collaborated well with peers while working on full-stack and testing
-            related tasks.”
-        </p>
-        <div class="testimonial-name">
-            – Team Member, Academic Project Collaboration
-        </div>
-    </div>
-</div>
-
-
     <footer>
         <div>© <span id="year"></span> Palak Palak</div>
         <div>Always learning. Always building.</div>
     </footer>
 </div>
 
-<script src="theme.js"></script>
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>

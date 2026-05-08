@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Contact – Palak Palak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Palak Palak — send a message via Web3Forms.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +17,6 @@
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html" class="active">Contact</a>
-            <button class="theme-toggle">☀ Light</button>
         </nav>
     </header>
 
@@ -59,17 +59,21 @@
                 </p>
             </div>
 
-            <div class="card">
-                <div class="card-title">Quick Message (demo form)</div>
-                <p class="card-body">
-                    This form is for demonstration in the portfolio. You can later connect it
-                    to a backend or a service like Formspree to receive actual messages.
-                </p>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <textarea rows="4" placeholder="Your message"></textarea>
-                    <button type="button" class="btn-primary">Send (demo)</button>
+            <div class="card card-contact-message">
+                <div class="card-title">Send a message</div>
+                <div id="contact-form-status" class="contact-form-status" role="status" aria-live="polite" hidden></div>
+                <form class="contact-form" id="portfolio-contact-form" method="POST" action="https://api.web3forms.com/submit" novalidate>
+                    <input type="hidden" name="access_key" value="08a72eb9-aa1a-4ff6-b890-05482ffc8691">
+                    <label class="contact-form-label" for="wf-name">Name</label>
+                    <input id="wf-name" name="name" type="text" autocomplete="name" placeholder="Your name">
+
+                    <label class="contact-form-label" for="wf-email">Email <span class="contact-required">*</span></label>
+                    <input id="wf-email" name="email" type="email" autocomplete="email" required placeholder="Your email">
+
+                    <label class="contact-form-label" for="wf-message">Message <span class="contact-required">*</span></label>
+                    <textarea id="wf-message" name="message" rows="5" required placeholder="Your message"></textarea>
+
+                    <button type="submit" class="btn-primary btn-contact-send">Send message</button>
                 </form>
             </div>
         </div>
@@ -81,9 +85,6 @@
     </footer>
 </div>
 
-<script src="theme.js"></script>
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+<script src="js/contact-form.js"></script>
 </body>
 </html>

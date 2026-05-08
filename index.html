@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Palak Palak – Software Developer Portfolio</title>
@@ -16,7 +16,6 @@
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
-            <button class="theme-toggle">☀ Light</button>
         </nav>
     </header>
 
@@ -38,7 +37,7 @@
                 <span class="tag">C# / ASP.NET MVC</span>
                 <span class="tag">Node.js / Express</span>
                 <span class="tag">SQL & Databases</span>
-                <span class="tag tag-soft">QA & Testing</span>
+                <span class="tag">QA & Testing</span>
             </div>
 
             <div class="hero-actions">
@@ -62,7 +61,7 @@
                         <ul>
                             <li>Full-stack project experience (school & personal)</li>
                             <li>Comfortable with Git, branching, and GitHub workflows</li>
-                            <li>Exposure to QA practices, Selenium, and defect tracking</li>
+                            <li>Exposure to QA practices, Selenium, and structured testing</li>
                         </ul>
                     </div>
                     <div>
@@ -115,19 +114,19 @@
             <div class="card">
                 <div class="card-title">Background</div>
                 <p class="card-body">
-                    Software development student with experience working on <strong>classroom projects</strong>
-                    that simulate real systems: recipe management, invoice generation, library systems,
-                    and secure product APIs.
+                    Projects span <strong>Python analytics dashboards</strong>, <strong>WebSocket multiplayer</strong>,
+                    a <strong>Spring Boot hospitality platform</strong>, and ASP.NET MVC recipe workflows—paired with routine
+                    <strong>GitHub</strong> and <strong>Jira</strong> hygiene.
                 </p>
             </div>
             <div class="card">
                 <div class="card-title">Software Development</div>
                 <ul class="list">
-                    <li>Java · Spring Boot · Spring Security</li>
-                    <li>C# · ASP.NET MVC · Entity Framework</li>
-                    <li>JavaScript · Node.js · Express · hbs</li>
-                    <li>REST APIs, routing, validation, and CRUD</li>
-                    <li>Relational databases: MySQL, SQL Server</li>
+                    <li>Java · Spring Boot · REST APIs · MySQL (Workbench)</li>
+                    <li>Python · data analysis · dashboards · pivot workflows</li>
+                    <li>WebSockets · real-time multiplayer clients</li>
+                    <li>C# · ASP.NET MVC · Entity Framework · SQL Server</li>
+                    <li>Collaboration · GitHub · Git · Jira boards</li>
                 </ul>
             </div>
             <div class="card">
@@ -153,38 +152,36 @@
 
         <div class="grid">
             <article class="card project-card">
-                <div class="card-title">Invoice Generator</div>
+                <div class="card-title">HR Attrition Data Analytics</div>
                 <div class="chip-row">
-                    <span class="chip chip-domain">Business</span>
-                    <span class="chip">Node.js</span>
-                    <span class="chip">Express</span>
-                    <span class="chip">hbs</span>
+                    <span class="chip chip-domain">Analytics</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">Dashboard</span>
+                    <span class="chip">Pivot insights</span>
                 </div>
                 <p class="card-body">
-                    Web app that calculates discounts based on customer type and invoice amount,
-                    storing invoices in JSON and using environment-based configuration.
+                    HR-focused attrition analytics with pivot-style slicing, explanatory visuals, and a live dashboard
+                    for exploring workforce risk drivers.
                 </p>
                 <p class="project-outcome">
-                    <strong>Outcome:</strong> Practiced backend logic, data persistence, and
-                    server-side rendering.
+                    <strong>Outcome:</strong> Turned raw HR spreadsheets into repeatable insight loops stakeholders can steer with.
                 </p>
             </article>
 
             <article class="card project-card">
-                <div class="card-title">Library System</div>
+                <div class="card-title">Flavor Garden</div>
                 <div class="chip-row">
-                    <span class="chip chip-domain">Education</span>
-                    <span class="chip">Java</span>
+                    <span class="chip chip-domain">Hospitality</span>
                     <span class="chip">Spring Boot</span>
+                    <span class="chip">REST</span>
                     <span class="chip">MySQL</span>
                 </div>
                 <p class="card-body">
-                    Full-stack library management system with RESTful endpoints for books, authors,
-                    and users, modeled with proper relationships.
+                    Full restaurant stack: seating, events, layered menus/items, bookings, confirmations via email—all
+                    modelled cleanly in Spring Boot plus Workbench-guided SQL schemas.
                 </p>
                 <p class="project-outcome">
-                    <strong>Outcome:</strong> Improved understanding of layered architecture,
-                    JPA entities, and CRUD APIs.
+                    <strong>Outcome:</strong> Shipped cohesive UI workflows with dependable APIs powering reservations and alerts.
                 </p>
             </article>
 
@@ -227,8 +224,8 @@
                 <div class="timeline-content">
                     <h3>Hands-on NBCC Projects</h3>
                     <p>
-                        Completed multiple course projects involving full-stack development, requirements
-                        analysis, and testing activities such as defect logging and Selenium automation.
+                        Portfolio builds tie together analytics dashboards, realtime WebSocket games,
+                        hospitality APIs, MVC apps, paired with QA habits and toolchain fluency via GitHub and Jira.
                     </p>
                 </div>
             </div>
@@ -238,8 +235,8 @@
                 <div class="timeline-content">
                     <h3>Technical Milestones</h3>
                     <p>
-                        Built REST APIs using Java Spring Boot and ASP.NET MVC, integrated databases,
-                        and implemented authentication/authorization in secure projects.
+                        Spring Boot services, disciplined SQL through Workbench, Python analytics loops, and networked
+                        clients consuming REST + WebSockets end to end.
                     </p>
                 </div>
             </div>
@@ -259,11 +256,10 @@
 
     <footer>
         <div>© <span id="year"></span> Palak Palak</div>
-        <div>Built with HTML, CSS & a custom light/dark theme.</div>
+        <div>Built with HTML, CSS, and JavaScript.</div>
     </footer>
 </div>
 
-<script src="theme.js"></script>
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
