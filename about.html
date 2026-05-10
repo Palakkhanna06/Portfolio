@@ -10,8 +10,15 @@
 <div class="page">
 
     <header class="site-header">
-        <div class="brand">PALAK</div>
-        <nav>
+        <div class="site-header-top">
+            <div class="brand">PALAK</div>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+        <nav id="primary-nav">
             <a href="index.html">Home</a>
             <a href="about.html" class="active">About</a>
             <a href="projects.html">Projects</a>
@@ -186,5 +193,6 @@
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<script src="js/nav-menu.js"></script>
 </body>
 </html>
